@@ -3,6 +3,7 @@ import Filter from "../common/Filter.tsx";
 import {data} from "../../data/communityData.ts";
 import LogCard from "../common/LogCard.tsx";
 import { Pagination } from '@mantine/core';
+import TopTab from "../common/TopTab.tsx";
 
 
 function CommunityLog() {
@@ -18,7 +19,9 @@ function CommunityLog() {
                     <Filter />
                 </div>
             </div>
-            <div className={"tab-container"} ></div>
+            <div className={"tab-container"} >
+                <TopTab />
+            </div>
             <div className={"content-container flex flex-col gap-2"} >
                 {data?.map((item) => {
                     return (
