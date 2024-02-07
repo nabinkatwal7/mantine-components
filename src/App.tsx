@@ -1,13 +1,15 @@
-import "./App.css";
+import './App.css'
+import '@mantine/core/styles.css';
+import { MantineProvider } from '@mantine/core';
+import CommunityLog from "./components/communitylog/CommunityLog.tsx";
 
 function App() {
+
   return (
-    <div>
-      <h1 className="text-3xl text-center text-red-700">
-        Welcome to Vite with TailwindCSS and React
-      </h1>
-    </div>
-  );
+    <MantineProvider>
+      <CommunityLog />
+    </MantineProvider>
+  )
 }
 
-export default App;
+export default App
